@@ -1,0 +1,32 @@
+    1  mkdir ~/week1
+    2  cd week1
+    3  /usr/bin
+    4  ls /usr/bin
+    5  /usr/bin | grep gcc | sort -r | > ~/week1/ex1.txt
+    6  ls /usr/bin | grep gcc | sort -r | > ~/week1/ex1.txt
+    7  vim ex1.txt
+    8  cd week1
+    9  ls /usr/bin
+   10  ls /usr/bin | grep gcc | sort -r > ~/week1/ex1.txt
+   11  ls
+   12  vim ex1.txt 
+   13  nano ex1.txt
+   14  ls /usr/bin
+   15  ls /usr/bin | grep gcc | sort -r > ex1.txt
+   16  nano ex1.txt
+   17  ls
+   18  ls /usr/bin | grep gcc | sort -r > ex2.txt
+   19  ls
+   20  vim ex2.txt
+   21  gcc
+   22  sudo apt-get install gcc
+   23  ls /usr/bin | grep gcc | sort -r > ex2.txt
+   24  vim ex2.txt
+   25  ls
+   26  rm ex2.txt
+   27  rm list.txt
+   28  ls
+   29  ls /usr/bin | grep gcc | sort -r > ex1.txt
+   30  vim ex1.txt 
+   31  history
+   32  history > ex2.txt
