@@ -46,7 +46,10 @@ Node* get_element_at_index(int index, Node* root){
 }
 
 void insert_node(int index, int value, Linked_list* list){
-
+    if(index < 0){
+        puts("Index out of bounds!");
+        return;
+    }
     Node* root = list->Root;
 
     Node* previous = get_element_at_index(index, root);
@@ -65,8 +68,8 @@ void delete_node(int value, Linked_list* list){
     Node* root = list->Root;
     while (root->next != NULL){
         if(root->next->value == value){
-            root->next = root->next->next;
             Node* deleted = root->next;
+            root->next = root->next->next;
             free(deleted);
             return;
         }
@@ -101,4 +104,6 @@ int main() {
 
     delete_node(13, list);
     print_list(list);
+
+    insert_node(-1, 5, list);
 }
