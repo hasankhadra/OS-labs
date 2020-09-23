@@ -50,12 +50,7 @@ int main() {
     printf("Avg Turnaround time = %f \n", total_tarrival / (float)n);
     printf("Avg Waiting time = %f \n", total_wt / (float)n);
 
-    for(int i=0;i<n;i++){
-        printf("Process number: %d\t", (i + 1));
-        printf("Arrival time: %d\t", arrival[i]);
-        printf("Burst time: %d\t", burst[i]);
-        printf("Turnaround timer: %d\t", turnaround_time[i]);
-        puts("");
-    }
+    for(int i=0;i<n;i++)
+        printf("Process number %d:\t Arrival time: %d\t Burst time: %d\t\tTurnaround time: %d\n", (i + 1), arrival[i], burst[i], turnaround_time[i]);
 
 }
