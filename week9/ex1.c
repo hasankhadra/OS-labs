@@ -17,8 +17,6 @@ int main(){
     int input;
 
     while(fscanf(in,"%d",&input) == 1){
-        printf("%d\n", input);
-        if(input == 0)break;
         hit = lowest = 0;
         total++;
 
