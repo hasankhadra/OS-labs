@@ -3,3 +3,4 @@ We can put repeated page numbers in order to get a high hit/misses rate. For exa
 
 Decrease:
 We can put unique numbers of pages in order to get a low hit/misses rate. This way, we won't have any hits because each page will occur only once and thus, will always miss.
+For example: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14).
