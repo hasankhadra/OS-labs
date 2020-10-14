@@ -2,14 +2,16 @@
 #include <stdlib.h>
 #include <string.h>
 
-const int frames = 10;
+const int frames1 = 10;
+const int frames2 = 50;
+const int frames3 = 100;
 const int max_bit = 30;
 
 int total, misses;
 int hit, lowest;
 
 int main(){
-    int ram[frames], a[frames];
+    int ram[frames1], a[frames1];
     memset(ram, -1, sizeof(ram));
     FILE* in = fopen("input.txt", "r");
     int input;
@@ -20,7 +22,7 @@ int main(){
         hit = lowest = 0;
         total++;
 
-        for(int i=0;i<frames;i++){
+        for(int i=0;i<frames1;i++){
             a[i] >>= 1;
 
             if(ram[i]==input){
@@ -39,7 +41,7 @@ int main(){
         ram[lowest]=input;
     }
 
-    printf("frames => %d\t in total => %d\t #hits => %d\t #misses => %d\n", frames, total, total - misses, misses);
+    printf("frames => %d\t in total => %d\t #hits => %d\t #misses => %d\n", frames1, total, total - misses, misses);
     printf("hits/miss => %.2f\n", (double)(total-misses)/(misses));
 
 }
