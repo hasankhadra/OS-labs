@@ -1,0 +1,5 @@
+Increase:
+We can put repeated page numbers in order to get a high hit/misses rate. For example: (5, 5, 5, 5, 5, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1).
+
+Decrease:
+We can put unique numbers of pages in order to get a low hit/misses rate. This way, we won't have any hits because each page will occur only once and thus, will always miss.
