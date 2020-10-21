@@ -1,0 +1,8 @@
+hasan@hasanpc-vm-fr1:~/OS-labs/week10# link ../week1/file.txt _ex2.txt
+hasan@hasanpc-vm-fr1:~/OS-labs/week10# ls -i _ex2.txt 
+246002 _ex2.txt
+hasan@hasanpc-vm-fr1:~/OS-labs/week10# find -inum 246002
+./_ex2.txt
+hasan@hasanpc-vm-fr1:~/OS-labs/week10# find -inum 246002 -exec rm {} \;
+hasan@hasanpc-vm-fr1:~/OS-labs/week10# ls -i _ex2.txt 
+ls: cannot access '_ex2.txt': No such file or directory
