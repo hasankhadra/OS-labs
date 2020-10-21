@@ -40,7 +40,7 @@ int main(){
         Enn[cnt++]=x;
     }
     closedir(dir);
-    for(int j=0;j<cnt;j++) if(Enn[j].links>1) printf("The file %s has the inode: %llu\n", Enn[j].names, Enn[j].inode);
+    for(int j=0;j<cnt;j++) if(Enn[j].links>1) printf("The files %s have the inode: %llu\n", Enn[j].names, Enn[j].inode);
     return 0;
 }
 
