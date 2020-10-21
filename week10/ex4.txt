@@ -1,0 +1,1 @@
+The files link1, file1 have the inode: 2537801
