@@ -1,0 +1,10 @@
+hasan@hasanpc-vm-fr1:~/OS-labs/week10# touch _ex3.txt
+hasan@hasanpc-vm-fr1:~/OS-labs/week10# chmod +rwx _ex3.txt
+hasan@hasanpc-vm-fr1:~/OS-labs/week10# chmod g-rwx _ex3.txt
+hasan@hasanpc-vm-fr1:~/OS-labs/week10# chmod g=u _ex3.txt
+
+
+Explanation:
+- 777 means read+write+execute for everyone.
+- 660 means read+write for owner and group only.
+- 775 means read+write+execute for owner and group, and read+execute for others.
