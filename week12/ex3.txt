@@ -1,0 +1,8 @@
+With O_SYNC:
+The file size is 10M and (DBUF = 100bytes, 2.6s) and (512bytes, 0.6s)
+
+without O_SYNC:
+The file size is 10M and (DBUF = 10bytes, 1.7s) and (100bytes, 0.2s) and (DBUF = 512bytes, 0.09s)
+The file size is 100M and (DBUF = 10bytes, 18s) and (100bytes, 2s) and (DBUF = 512bytes, 1.2s)
+
+O_SYNC increase total elapsed time of operations.
