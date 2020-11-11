@@ -1,0 +1,2 @@
+It's always better to prevent the resources if we don't know how they're used. Also, if we don't know anything about processes resources we shouldn't avoid them.
+When we can predict the outcome it's better to use recovery (when deadlock occurs).
